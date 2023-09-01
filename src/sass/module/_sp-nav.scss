@@ -13,6 +13,7 @@
     z-index: 8888;
     transform: translateX(-100%);
     transition: ease .3s;
+    box-shadow: 0px 3px 6px #00000029;
     @include mq(md){
         display: none;
     }
