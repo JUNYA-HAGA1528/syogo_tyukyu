@@ -1,44 +1,69 @@
 @use "global" as *;
-
 .header{
-    height: rem(94);
-    background-color: $white;
-    width: 100%;
-    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: rem(80);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    color: $black;
     box-shadow: 0px 3px 6px #00000029;
+    @include mq(md){
+        height: rem(94);
+    }
 }
 
 .header__inner{
+    height: inherit;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    height: inherit;
 }
 
-.header__wrapper{
+.header_wrapper{
+    height: inherit;
     display: flex;
     align-items: center;
-    height: inherit;
 }
 
+.header__logo {
+    position: relative;/* z-indexをきかせるため */
+    z-index: 9999;
+}
 
 .header__logoLink{
     display: flex;
+    align-items: center;
 }
 
-.header__logo img{
-    width: rem(47);
-    height: rem(47);
+.header__logoLink img{
+    width:rem(47) ;
+    @include mq(md){
+        width: rem(47);
+    }
 }
 
 .header__logoLink p{
+    line-height: calc(35/24);
+    font-size: rem(24);
+    font-weight: $bold;
     margin-left: rem(16);
 }
- 
-.header__nav{
-    display: flex;
-    align-items: center;
-    margin-left: rem(114);
+
+.header__pc-nav {
+	height: inherit;
 }
 
+.header__sp-nav{
+    padding-top: rem(150);
+    text-align: center;
+}
 
+.header__button{
+    display: none;
+    @include mq(md){
+        display: block;
+        text-align: center;
+    }
+}

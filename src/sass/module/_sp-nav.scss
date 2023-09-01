@@ -1,25 +1,44 @@
 @use "global" as *;
 
+
 .sp-nav{
-    height: inherit;
+    // display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $white;
+    width: 50%;
+    height: 100vh;
+    z-index: 8888;
+    transform: translateX(-100%);
+    transition: ease .3s;
+    @include mq(md){
+        display: none;
+    }
 }
 
-.sp-nav__items{
-    height: inherit;
-    display: flex;
-    align-items: center;
+.header__sp-nav.is-open{
+    transform: translateX(0);
 }
 
-.sp-nav__item{
-    height: inherit;
-    font-size: rem(16);
-    font-weight: $bold;
-    line-height: calc(24/16);
+.sp-nav__body{
+    width: 100%;
+    min-height: rem(500);
+}
+
+.sp-nav__items + .sp-nav__items{
+    margin-top: rem(16);
 }
 
 .sp-nav__item a{
-    height: inherit;
-    padding:0 min(2vw, 23px);
-    display: grid;
-    place-items: center;
+    display: inline-block;
+    width: 100%;
+    color: $black;
+    padding-top: rem(24);
+    padding-bottom: rem(24);
+    padding-left: rem(22);
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(18/16);
 }

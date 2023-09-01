@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.pc-nav__list {
+    height: inherit;
+	display: flex;
+    margin-left: rem(114);
+}
+
+.pc-nav__item {
+	height: inherit;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(24/16);
+}
+
+.pc-nav__item a {
+    height: inherit;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	padding:0 min(2vw, rem(23));
+}
+
