@@ -8,7 +8,7 @@
     left: 0;
     right: 0;
     background-color: $white;
-    width: 50%;
+    width: 100%;
     height: 100vh;
     z-index: 8888;
     transform: translateX(-100%);
@@ -38,7 +38,6 @@
     color: $black;
     padding-top: rem(24);
     padding-bottom: rem(24);
-    padding-left: rem(22);
     font-size: rem(16);
     font-weight: $bold;
     line-height: calc(18/16);

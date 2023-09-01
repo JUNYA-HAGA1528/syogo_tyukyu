@@ -1,0 +1,83 @@
+@use "global" as *;
+
+.mv__inner{
+    position: relative;
+    max-width: $max-width;
+    width: 100%;
+    margin: auto;
+    @include mq(md){
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.mv__inner::before {
+    background-image: url(../images/common/mv_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: rem(130);
+    right: calc(50% - min(45%, rem(600)));
+    width: rem(623);
+    /* height指定しないと表示されないので、ここは指定する */
+    height: rem(681);
+    z-index: -100;
+    @include mq(md){
+        bottom: rem(-50);
+        right: calc(50% - min(48%, rem(1000)));
+    }
+}
+
+.mv__text{
+    text-align: center;
+    @include mq(md){
+        text-align: left;
+        width: 38%; 
+    }
+}
+
+.mv__title{
+    font-size: rem(24);
+    @include mq(md){
+        font-size: rem(32);
+        font-weight: $bold;
+        line-height: calc(46/32);
+    }   
+}
+
+.mv__subtitle{
+    margin-top: rem(20);
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(24/16);
+    @include mq(md){
+        margin-top: rem(44);
+    }
+}
+
+.mv__button{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(45);
+    }
+}
+
+.mv__img{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: 0;
+        width: 52.7494%;
+    }
+}
+
+.mv__img img{
+    aspect-ratio: 335/280;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 518/430;
+    }
+}

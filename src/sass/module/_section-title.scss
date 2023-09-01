@@ -2,15 +2,21 @@
 
 
 .section-title__jp{
-    font-size: rem(32);
+    font-size: rem(24);
+    line-height: 1;
     font-weight: $bold;
-    line-height: calc(46/32);
     color: $black;
+    @include mq(md){
+        font-size: rem(32);
+        line-height: calc(46/32);        
+    }
 }
 
 .section-title__en{
+    margin-top: rem(10);
     font-size: rem(16);
     font-weight: $bold;
     line-height: calc(24/16);
     color: $skyblue;
+    text-transform: uppercase;
 }

@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.features__inner{
+    max-width: $max-width;
+    width: 100%;
+    margin: auto;
+}
+
+.features__title{
+    text-align: center;
+}
+
+.features__items{
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: rem(56);
+    }
+}
+
+.features__item + .features__item{
+    margin-top: rem(80);
+}

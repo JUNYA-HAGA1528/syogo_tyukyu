@@ -1,0 +1,70 @@
+@use "global" as *;
+
+.features-card{
+
+}
+
+.features-card__title{
+    text-align: center;
+    font-size: rem(24);
+    font-weight: $bold;
+    line-height: calc(40/24);
+    @include mq(md){
+        font-size: rem(28);
+        line-height: calc(40/28);
+    }
+}
+
+
+.features-card__content{
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: rem(50);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.features-card__content--revarce{
+    @include mq(md){
+        flex-direction: row-reverse;
+    }
+}
+
+.features-card__img{
+    @include mq(md){
+        width: 38.6965%;
+    }
+}
+
+.features-card__img img{
+    aspect-ratio: 335/270;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 380/314;
+    }
+}
+
+.features-card__sentence{
+    margin-top: rem(40);
+    @include mq(md){
+        width: 55%;
+        margin-top: rem(0);
+    }
+}
+
+.features-card__subtitle{
+    font-size: rem(24);
+    font-weight: $bold;
+    line-height: calc(48/24);
+}
+
+.features-card__text{
+    margin-top: rem(30);
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(26/16);
+}
