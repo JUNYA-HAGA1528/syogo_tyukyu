@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.header{
+    height: rem(94);
+    background-color: $white;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+.header__wrapper{
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+
+.header__logoLink{
+    display: flex;
+}
+
+.header__logo img{
+    width: rem(47);
+    height: rem(47);
+}
+
+.header__logoLink p{
+    margin-left: rem(16);
+}
+ 
+.header__nav{
+    display: flex;
+    align-items: center;
+    margin-left: rem(114);
+}
+
+

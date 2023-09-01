@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.sp-nav{
+    height: inherit;
+}
+
+.sp-nav__items{
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.sp-nav__item{
+    height: inherit;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(24/16);
+}
+
+.sp-nav__item a{
+    height: inherit;
+    padding:0 min(2vw, 23px);
+    display: grid;
+    place-items: center;
+}

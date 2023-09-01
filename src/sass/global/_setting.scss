@@ -2,11 +2,11 @@
 
 // インナー幅設定
 // コンテンツのインナー幅（最も共通の幅が多い部分）
-$inner: 1100px;
+$inner: 1056px;
 // ※キュンパス幅ではなくインナーの幅を指す
 
 // 余白
-$padding-pc: 25px;
+$padding-pc: 20px;
 $padding-sp: 20px;
 
 ////////////////////
@@ -17,8 +17,27 @@ $base-font-family: "";
 $second-font-family: "";
 // ※検証ツールでしっかり反映されているか確認する
 
+
+a {
+	-webkit-transition: opacity 0.3s;
+	color: inherit;
+	text-decoration: none;
+	transition: opacity 0.3s;
+}
+
+////////////////////
+// 色の指定
+////////////////////
+
+//色指定（共通性のあるものは出来る限り指定すると良い）
+$black: #333333;
+$white: #fff;
+$skyblue:#3BA6C9;
+
+
 body {
   font-family: $base-font-family;
+  color: $black;
 }
 
 // フォントウェイト
@@ -26,10 +45,3 @@ $regular: 300;
 $normal: 400;
 $bold: 700;
 
-////////////////////
-// 色の指定
-////////////////////
-
-//色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #111;
-$white: #fff;

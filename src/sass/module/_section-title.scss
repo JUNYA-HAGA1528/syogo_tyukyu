@@ -1,0 +1,16 @@
+@use "global" as *;
+
+
+.section-title__jp{
+    font-size: rem(32);
+    font-weight: $bold;
+    line-height: calc(46/32);
+    color: $black;
+}
+
+.section-title__en{
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(24/16);
+    color: $skyblue;
+}
