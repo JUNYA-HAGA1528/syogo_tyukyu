@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.top-faq{
+    margin-top: rem(55);
+}
+
+.faq__inner{
+    max-width: $max-width;
+    width: 100%;
+    margin: auto;
+}
+
+.faq__items{
+    margin-top: rem(32);
+}

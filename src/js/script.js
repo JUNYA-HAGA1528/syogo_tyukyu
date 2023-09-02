@@ -12,5 +12,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
     
-
+    //accordion
+    $(function () {
+        $(".accordion__content").css("display", "block");
+        $(".accordion__title").addClass("show");
+        $(".accordion__title").on("click", function () {
+            $(this).next().slideToggle();
+            $(this).toggleClass("show");
+        });
+    });
 });

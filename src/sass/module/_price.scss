@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.price{
+    background-color: #EEFBFB;
+    padding: rem(55) 0 rem(68);
+}
+
+.price__inner{
+    max-width: $max-width;
+    width: 100%;
+    margin: auto;
+}
