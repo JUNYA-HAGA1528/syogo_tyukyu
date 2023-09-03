@@ -42,3 +42,10 @@
     font-weight: $bold;
     line-height: calc(18/16);
 }
+
+/*ハンバーガーメニューが開いた際に、背景を固定する*/
+body.menu-open {
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll; /* 縦スクロールバーを表示 */
+}

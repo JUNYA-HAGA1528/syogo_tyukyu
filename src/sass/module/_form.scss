@@ -1,0 +1,105 @@
+@use "global" as *;
+
+.form__item + .form__item{
+    margin-top: rem(25);
+}
+  
+.form_title{
+    font-size: rem(16);
+    font-weight: bold;
+    line-height: calc(26/16);
+}
+
+.form_required{
+    background-color: #0C449B;
+    color: $white;
+    text-align: center;
+    display: inline-block;
+    margin-left: rem(23);
+    padding: rem(8) 0;
+    width: rem(60);
+    border-radius: rem(8);
+    font-size: rem(14);
+    font-weight: $bold;
+    line-height: 1;
+}
+  
+.form_input{
+    margin-top: rem(20);
+    width: 100%;/*枠のサイズ*/
+    padding: rem(6.5) rem(10);
+    border-radius: rem(5);
+    background-color: #EEFBFB;
+    font-size: rem(14);
+    @include mq(md){
+        display: block;
+        max-width: rem(500);
+        width: 100%;
+    }
+    
+}
+  
+  
+.form_textarea{
+    margin-top: rem(20);
+    min-width: 100%;/*これ以上枠が小さくならないようにする指定　ただ、普通のwidthでも変化しないので通常でもいいかも*/
+    min-height: rem(179);
+    padding: rem(8);
+    border-radius: rem(5);
+    background-color: #EEFBFB;
+}
+
+.form__agreement{
+    margin: rem(32) auto 0;
+    display: block;
+    max-width: rem(275);
+    width: 100%;
+    @include mq(md){
+        margin: rem(72) auto 0
+    }
+}
+
+.form__agreement-text {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center; //縦方向に関するプロパティ。display:flex;と合わせて使う。
+    padding-left: rem(30);
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(28/16);
+    @include mq(md){
+        padding-left: rem(32);
+    }
+}
+
+.form__agreement-text::before {
+    content: '';
+    position: absolute;
+    top: rem(2.5);
+    right: 0;
+    left: 0;
+    display: block;
+    width: rem(20);
+    height: rem(20);
+    border: 1px solid #707070; //外側は正方形
+}
+
+  
+.form__agreement-input:checked+.form__agreement-text::after { 
+    content: '';
+    position: absolute;
+    top: rem(5);
+    left: rem(9);
+    width: rem(5); //長方形を作る
+    height: rem(10);
+    display: block;
+    border-right: rem(2) solid #C94800; //右と
+    border-bottom: rem(2) solid #C94800; //下だけにborder
+    transform: rotate(45deg); //追加
+}
+
+.form__button{
+    text-align: center;
+    margin-top: rem(30);
+}

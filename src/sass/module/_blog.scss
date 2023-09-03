@@ -1,2 +1,23 @@
 @use "global" as *;
 
+.blog{
+    background-color: #EEFBFB;
+    padding: rem(55) 0 rem(91);
+}
+
+.blog__inner.inner{
+    max-width: $max-width;
+    width: 100%;
+    margin: auto;
+    @include mq(md){
+        max-width: rem(1266);
+    }
+}
+
+.blog__items{
+    margin-top: rem(54);
+    @include mq(md){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

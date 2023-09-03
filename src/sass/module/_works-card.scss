@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.works-card{
+	display: flex;
+    flex-direction: column;
+    height: 100%;
+	box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+    border-radius: rem(8);
+}
+
+.works-card__img img {
+	aspect-ratio: 280/188;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	@include mq(md){
+		aspect-ratio: 322/204;	
+	}
+}
+
+.works-card__body{
+	display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+	padding:rem(20) rem(18) rem(40);
+}
+
+.works-card__title{
+	font-size: rem(16);
+    font-weight: $bold;
+	line-height: calc(24/16);
+	flex-grow: 1;
+}
+
+.works-card__wrapper{
+	margin-top: rem(30);
+}
+
+.works-card__text{
+    font-size: rem(14);
+    font-weight: $bold;
+	line-height: calc(20/14);
+}

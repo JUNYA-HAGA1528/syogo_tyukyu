@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.contact{
+    background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat padding-box;
+    padding: rem(60) 0 rem(70);
+}
+
+.contact__inner{
+    max-width: $max-width;
+    width: 100%;
+    margin: auto;
+}
+
+.subtitle{
+    margin-top: rem(36);
+    text-align: center;
+    color: $white;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(24/16);
+}
+
+.contact__form{
+    margin-top: rem(64);
+    background-color: $white;
+    padding: rem(30) rem(60) rem(35);
+}

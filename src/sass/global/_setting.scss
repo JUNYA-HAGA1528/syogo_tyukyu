@@ -49,3 +49,8 @@ $regular: 300;
 $normal: 400;
 $bold: 700;
 
+:root {
+    --header: 6rem;
+    scroll-padding-top: calc(var(--header) + 1rem); /* 特定のセクションに適用する値 */
+
+  }

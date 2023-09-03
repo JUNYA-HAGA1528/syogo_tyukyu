@@ -1,0 +1,17 @@
+@use "global" as *;
+
+
+.works-cards{
+	margin-top: rem(24);
+    @include mq(md){
+		margin-top: rem(68);
+    }
+}
+
+.works-cards__item{
+	width: rem(280);
+    height: auto;
+	@include mq(md){
+		width: rem(322);
+	}
+}
